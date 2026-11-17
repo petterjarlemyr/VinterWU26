@@ -1,1 +1,204 @@
-/* Här skrivs all din CSS */
+
+
+/* Startsidan 
+jag ska  fixa griddet senare genom att skapa en grid inuti de bilder som ska vara halvt bild halvt text*/
+
+
+.start-grid {
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "hd hd"
+    "nav nav"
+    "img img2"
+    "img3 img4"
+    "ft ft";
+
+    gap: 15px;
+    
+}
+
+.area-split-container {
+    /* för att kunna splitta gridden */
+    display: grid;
+    grid-template-areas:
+    "img text";
+
+}   
+
+.area-split-container .img {
+    background: white;
+}
+
+.header {
+    grid-area: hd;
+    background-color: rgb(135, 47, 235);
+
+}
+¨
+.navigation {
+    grid-area: nav;
+    background-color: rgba(235, 104, 47, 1);
+    
+    
+}
+
+.navigation ul {
+    display: flex;
+    
+    justify-content: center;
+    
+
+}
+
+
+/* Stora bilder */
+
+.img, .img2, .img3, .img4 {
+
+    border-radius: 10px
+}
+
+.img {
+    grid-area: img;
+    background-color: rgb(88, 88, 88);
+    
+}
+
+.img2 {
+    grid-area: img2;
+    background-color: rgb(88, 88, 88);
+}
+
+.img3 {
+    grid-area: img3;
+    background-color: rgb(88, 88, 88);
+}
+
+.img4 {
+    grid-area: img4;
+    background-color: rgb(88, 88, 88);
+}
+
+
+
+
+
+/* Cards-sidan. */
+
+
+.cards-grid {
+
+    display: grid;
+    
+    grid-template-rows: 1fr 5fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "a1 a2 a3 a4"
+    "a5 a6 a7 a8"
+    "ft ft ft ft";
+
+    gap: 20px;
+
+    
+}
+
+
+
+/* Artiklarnas utseende och position */ 
+.article-1, .article-2, .article-3, .article-4, .article-5, .article-6, .article-7, .article-8 {
+    background-color: rgba(235, 104, 47, 1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+
+    
+}
+
+
+
+.article-1 {
+ 
+
+    
+
+    
+}
+
+.article-image {
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+
+    border-radius: 30px;
+    
+
+}
+
+
+
+.article-2 {
+
+}
+
+.article-3 {
+ 
+}
+
+.article-4 {
+    
+    
+}
+
+.article-5 {
+    
+
+}
+
+.article-6 {
+   
+}
+
+.article-7 {
+    
+}
+
+.article-8 {
+    
+}
+
+.footer {
+    grid-area: ft;
+    background-color: blue;
+}
+
+
+
+
+
+/* Skate kultur sida */
+
+
+.cards-grid {
+
+    display: grid;
+    
+    grid-template-rows: 1fr 5fr 5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "img empty"
+    "empty img"
+    "ft ft ft ft";
+
+    gap: 20px;
+
+    
+}
